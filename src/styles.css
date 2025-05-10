@@ -246,6 +246,10 @@ bottom: 73.7%;
   padding-left: 1px;
 }
 
+.point {
+  cursor: pointer;
+}
+
 .menu__backdrop {
   position: absolute;
   margin-top: 130px;

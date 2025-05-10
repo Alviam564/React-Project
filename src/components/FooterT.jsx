@@ -8,7 +8,7 @@ const FooterT = () => {
         <div className="footer">
             <div className="background-wrapperO">
                 <div className="row footer__row">
-                    <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                    <button className="point" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                         <img className="overlay-img main-page-logo-d main-page-logo-mini" src={ PTCGL } alt="pokemon TCG Logo"/>
                     </button>
                     <img className="bg-imageY bg-image-fixb" src={ PZWC } alt="Pikachu & Zekrom" />
