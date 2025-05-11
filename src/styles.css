@@ -9,7 +9,7 @@
 .title-logo {
   width: 380px;
   position: relative;
-  left: 37%;
+  left: 35%;
 }
 
 .title-logo-e {
@@ -321,12 +321,16 @@ bottom: 73.7%;
   border: none;
   border-radius: 5px;
   font-size: 20px;
-
 }
 
-.input {
-  margin-left: 33%;
-  width: 490px;
+.input-all {
+  width: 220px;
+}
+.input-m-r {
+  margin-right: 127px;
+}
+.input-solo {
+  width: 230px;
 }
 
 .Ffix {
@@ -355,6 +359,14 @@ bottom: 73.7%;
 .dfix {
   display: flex;
 }
+
+.space {
+  justify-content: space-around;
+}
+.pad {
+  margin-bottom: 10px;
+}
+
 .rowf {
   padding-top: 20px;
   padding-left: 30px;
@@ -424,9 +436,9 @@ footer {
     bottom: 17%;
     width: 300px
   }
-  .input {
-    margin-left: 33%;
-    width: 490px;
+  .input-m-r {
+    margin-right: 0;
+    margin-left: 10px
   }
   .title-logo,
   .title-logo-e {
@@ -443,8 +455,11 @@ footer {
   .title-logo-e {
     left: 33%;
   }
+  .up {
+    padding-top: 15px;
+  }
   .down {
-    padding-bottom: 750px
+    padding-bottom: 740px
   }
   .content-wrapper {
     margin: 0 40px;
@@ -460,8 +475,8 @@ footer {
     right: 22%;
     bottom: 17%;
   }
-  .input {
-    margin-left: 34%;
+  .input-m-r{
+    margin-left: 12%;
     width: 332px;
   }
 }
@@ -548,7 +563,7 @@ footer {
     width: 120px;
   }
   .page-opp-logo {
-    width: 120px;
+    width: 100px;
   }
   .title-symbol {
     width: 70px;
@@ -611,9 +626,15 @@ footer {
   .hidUD{
     display:none
   }
-  .input {
-    margin-left: 33%;
-    width: 169px;
+  .input-m-r {
+    margin-left: 26%;
+    width: 310px;
+  }
+  .colu {
+  flex-direction: column;
+  }
+  .pad {
+    margin-bottom: 10px;
   }
 }
 
@@ -673,9 +694,9 @@ footer {
   .hidUD{
     display:none
   }
-  .input {
-    margin-left: 30%;
-    width: 168px;
+ .input-m-r {
+    margin-left: 20%;
+    width: 290px;
   }
 }
 
@@ -748,8 +769,8 @@ footer {
   .hidUD{
     display:none
   }
-  .input {
-    margin-left: 25%;
-    width: 170px;
+  .input-m-r {
+    margin-left: 15%;
+    width: 260px;
   }
 }

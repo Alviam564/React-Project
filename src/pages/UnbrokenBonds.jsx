@@ -1,12 +1,15 @@
-import { Link } from "react-router-dom"
-import { useState } from "react"
 import NavbarU from "../components/NavbarU"
 import BackGround from "../components/BackGround"
 import FooterU from "../components/FooterU"
+import { UBL } from "../utils/images"
+import SearchbarUS from "../components/SearchbarUA"
+import SearchbarUA from "../components/SearchbarUA"
+import Search from "./Search"
+
 
 const UnbrokenBonds = () => {
     return (
-        <body id="UB">
+        <div id="UB">
             <section>
                 <NavbarU />
             </section>
@@ -15,18 +18,21 @@ const UnbrokenBonds = () => {
                     <BackGround cardsData={process.env.POKEMON_TCG_API_KEY}/>
                 </div>
                 <section>
-                    <div class="top-e">
-                        <img class="title-logo-e" src="../src/assets/UB logo.png" alt="" />
+                    <div className="top-e">
+                        <img className="title-logo-e" src={ UBL } alt="Unbrokenbonds logo" />
                     </div>
-                    <input 
-                        type="text"
-                        class="input selectUBs"
-                        id="searchBar" 
-                        placeholder="Search by names or go to the filters for an easier time" 
-                        oninput="searchFunction()"
-                    />
-                    <div class="down">
-                        <div class="content-wrapper OW">
+                    <div className="dfix space colu pad">
+                        <div className="input-solo input-m-r pad">
+                        <SearchbarUA />
+                        </div>
+                        <div className="input-all input-m-r">
+                        <SearchbarUS>
+                            <Search />
+                        </SearchbarUS>
+                        </div>
+                    </div>
+                    <div className="down">
+                        <div className="content-wrapper OW">
                             <h1>
                                 <span class="F1">Filters:</span>
                             </h1>
@@ -34,7 +40,7 @@ const UnbrokenBonds = () => {
                                 <h1>
                                     <span class="F1">:Sort</span>
                                 </h1>
-                                <button class="btn__menu menu--open OW" onclick="openMenu()">
+                                <button class="btn__menu menu--open OW" onClick="openMenu()">
                                     <div class="filters-containerUB">
                                         <div class="filter-section">
                                             <select class="selectUB">
@@ -45,7 +51,7 @@ const UnbrokenBonds = () => {
                                 </button>
                                 <div class="menu__backdrop WO">
                                     <div class="filters-containerUB">
-                                        <button class="btn__menu btn__menu--close dfix OW" onclick="closeMenu()">
+                                        <button class="btn__menu btn__menu--close dfix OW" onClick="closeMenu()">
                                             <i class="fa fa-times"></i>
                                             <p class="pfix rowf">Choose a Type & Range</p>
                                         </button>
@@ -67,7 +73,7 @@ const UnbrokenBonds = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn__menu menu--open OW openhi" onclick="openMenu()">
+                            <button class="btn__menu menu--open OW openhi" onClick="openMenu()">
                                 <div class="filters-containerUB">
                                     <div class="filter-section">
                                         <select class="selectUB">
@@ -78,7 +84,7 @@ const UnbrokenBonds = () => {
                             </button>
                             <div class="menu__backdrop WO">
                                 <div class="filters-containerUB">
-                                    <button class="btn__menu btn__menu--close dfix OW" onclick="closeMenu()">
+                                    <button class="btn__menu btn__menu--close dfix OW" onClick="closeMenu()">
                                         <i class="fa fa-times"></i>
                                     </button>
                                     <div class="filter-section">
@@ -141,7 +147,7 @@ const UnbrokenBonds = () => {
                 </section>
             </main>
             <FooterU />
-        </body>
+        </div>
     )
 }
 

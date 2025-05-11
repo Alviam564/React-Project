@@ -1,13 +1,15 @@
-import { Link } from "react-router-dom"
-import { useState } from "react"
 import NavbarT from "../components/NavbarT"
 import BackGround from "../components/BackGround"
 import FooterT from "../components/FooterT"
+import SearchbarTA from "../components/SearchbarTA"
+import SearchbarTS from "../components/SearchbarTS"
+import { TUL } from "../utils/images"
+import Search from "./Search"
 
 
 const TeamUp = () => {
     return (
-        <body id="TU">
+        <div id="TU">
             <section>
                 <NavbarT />
             </section>
@@ -16,17 +18,20 @@ const TeamUp = () => {
                     <BackGround cardsData={process.env.POKEMON_TCG_API_KEY}/>
                 </div>
                 <section>
-                    <div class="top">
-                        <img class="title-logo" src="../src/assets/TU logo.png" alt="" />
+                    <div className="top">
+                        <img className="title-logo" src={ TUL } alt="TeamUp logo" />
                     </div>
-                    <input 
-                        type="text"
-                        class="input selectTUs"
-                        id="searchBar" 
-                        placeholder="Search by names or go to the filters for an easier time" 
-                        oninput="searchFunction()"
-                    />
-                    <div class="down">
+                    <div className="dfix space colu pad">
+                        <div className="input-solo input-m-r pad">
+                        <SearchbarTA />
+                        </div>
+                        <div className="input-all input-m-r">
+                        <SearchbarTS>
+                            <Search />
+                        </SearchbarTS>
+                        </div>
+                    </div>
+                    <div class="down up">
                         <div class="content-wrapper YB">
                             <h1>
                                 <span class="F1">Filters:</span>
@@ -35,7 +40,7 @@ const TeamUp = () => {
                                 <h1>
                                     <span class="F1">:Sort</span>
                                 </h1>
-                                <button class="btn__menu menu--open YB" onclick="openMenu()">
+                                <button class="btn__menu menu--open YB" onClick="openMenu()">
                                     <div class="filters-containerTU">
                                         <div class="filter-section">
                                             <select class="selectTU">
@@ -46,7 +51,7 @@ const TeamUp = () => {
                                 </button>
                                 <div class="menu__backdrop BY">
                                     <div class="filters-containerTU">
-                                        <button class="btn__menu btn__menu--close dfix YB" onclick="closeMenu()">
+                                        <button class="btn__menu btn__menu--close dfix YB" onClick="closeMenu()">
                                             <i class="fa fa-times"></i>
                                             <p class="pfix rowf">Choose a Type & Range</p>
                                         </button>
@@ -68,7 +73,7 @@ const TeamUp = () => {
                                     </div>
                                 </div>
                             </div>
-                            <button class="btn__menu menu--open YB openhi" onclick="openMenu()">
+                            <button class="btn__menu menu--open YB openhi" onClick="openMenu()">
                                 <div class="filters-containerTU">
                                     <div class="filter-section">
                                         <select class="selectTU">
@@ -79,7 +84,7 @@ const TeamUp = () => {
                             </button>
                             <div class="menu__backdrop BY">
                                 <div class="filters-containerTU">
-                                    <button class="btn__menu btn__menu--close dfix YB" onclick="closeMenu()">
+                                    <button class="btn__menu btn__menu--close dfix YB" onClick="closeMenu()">
                                         <i class="fa fa-times"></i>
                                     </button>
                                     <div class="filter-section">
@@ -143,7 +148,7 @@ const TeamUp = () => {
                 </section>
             </main>
             <FooterT />
-        </body>
+        </div>
     )
 }
 

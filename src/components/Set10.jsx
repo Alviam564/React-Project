@@ -17,39 +17,9 @@ fetch('../src/data/unbroken-bonds.json')
 )
 .catch(error => console.error("Failed to load JSON:", error));
 
-function openMenu() {
-  document.body.classList += " menu--open"
-}
-
-function closeMenu() {
-  document.body.classList.remove('menu--open')
-}
-
 function createBackgroundCards() {
   const container = document.querySelector(".background-cards");
 
-  for (let i = 0; i < 7; i++) {
-    const card = document.createElement("div")
-    card.classList.add("card")
-
-    const img = document.createElement("img")
-    img.src = getRandomCardImage()
-
-    card.appendChild(img)
-    container.appendChild(card)
-
-    setInterval(() => {
-      img.src = getRandomCardImage()
-    }, 10000);
-  }
-}
-
-function getRandomCardImage() {
-  if(!Array.isArray(cardsData) || cardsData.length === 0) {
-    return "../src/assets/Pokémon_Trading_Card_Game_logo.svg.png"
-  }
-  const randomIndex = Math.floor(Math.random() * cardsData.length)
-  return cardsData[randomIndex].images.large;
 }
 
 function getFormattedPrices(pricesArr) {
@@ -172,23 +142,6 @@ async function renderCards(filteredCards = cardsData) {
   }
   
   displayCards(filteredCards);
-}
-
-function searchFunction() {
-  const input = document.getElementById(`searchBar`)
-  const filter = input.value.toUpperCase()
-
-  let filteredCards = cardsData.filter(card => {
-    return (
-      card.name.toUpperCase().includes(filter) ||
-      card.id.toUpperCase().includes(filter) ||
-      card.supertype.toUpperCase().includes(filter) ||
-      (card.types && card.types.some(type => type.toUpperCase().includes(filter))) ||
-      (card.rarity && card.rarity.toUpperCase().includes(filter))
-    )
-  })
-  renderCards(filteredCards)
-
 }
 
 function filterPriceRange(event) {
