@@ -19,7 +19,7 @@ const SearchbarUA = () => {
                 type="text"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="selectTUs"
+                className="selectUBs"
             />
         </form>
     )

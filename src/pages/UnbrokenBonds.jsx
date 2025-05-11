@@ -2,21 +2,19 @@ import NavbarU from "../components/NavbarU"
 import BackGround from "../components/BackGround"
 import FooterU from "../components/FooterU"
 import { UBL } from "../utils/images"
-import SearchbarUS from "../components/SearchbarUA"
+import SearchbarUS from "../components/SearchbarUS"
 import SearchbarUA from "../components/SearchbarUA"
 import Search from "./Search"
 
 
 const UnbrokenBonds = () => {
     return (
-        <div id="UB">
+        <div id='UB'>
             <section>
                 <NavbarU />
             </section>
             <main>
-                <div>
-                    <BackGround cardsData={process.env.POKEMON_TCG_API_KEY}/>
-                </div>
+                <BackGround />
                 <section>
                     <div className="top-e">
                         <img className="title-logo-e" src={ UBL } alt="Unbrokenbonds logo" />
@@ -31,7 +29,7 @@ const UnbrokenBonds = () => {
                         </SearchbarUS>
                         </div>
                     </div>
-                    <div className="down">
+                    <div className="down up">
                         <div className="content-wrapper OW">
                             <h1>
                                 <span class="F1">Filters:</span>

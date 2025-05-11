@@ -9,7 +9,7 @@ import Search from "./Search"
 
 const TeamUp = () => {
     return (
-        <div id="TU">
+        <div id='TU' >
             <section>
                 <NavbarT />
             </section>

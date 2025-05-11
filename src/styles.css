@@ -51,16 +51,18 @@ html {
 
 #TU {
   background-color: black;
-  color: white;
+  opacity: 0.999;
 }
 
 #UB {
   background-color: white;
-  color: black;
+  opacity: 0.999;
 }
 
 .Blackb {
   background-color: black;
+  display: flex;
+  align-items: center;
 }
 
 .Whiteb {

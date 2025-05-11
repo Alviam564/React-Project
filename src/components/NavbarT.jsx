@@ -5,7 +5,7 @@ import { PTCGL, PZ, UBL } from '../utils/images'
 
 const NavbarT = () => {
   return (
-    <nav className="Whiteb">
+    <nav className="Blackb">
       <div className="right">
         <Link to="/">
           <img className="page-logo" src={PTCGL} alt="Pokémon TCG Logo" />
