@@ -11,11 +11,11 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="alviam564/PokemonUTVUB/" element={<Home /> } />
-        <Route path="alviam564/PokemonUTVUB/teamup" element={<PreloaderGate setid="sm9"><TeamUp /></PreloaderGate>} />
-        <Route path="alviam564/PokemonUTVUB/unbrokenbonds" element={<PreloaderGate setid="sm10"><UnbrokenBond /></PreloaderGate>} />
-        <Route path="alviam564/PokemonUTVUB/card/:id" element={<CardFinder />} />
-        <Route path="alviam564/PokemonUTVUB/search/:searchTerm" element={<Search />} /> 
+        <Route path="alviam564/PokemonUTVUB.netlify.app" element={<Home /> } />
+        <Route path="alviam564/PokemonUTVUB/teamup.netlify.app" element={<PreloaderGate setid="sm9"><TeamUp /></PreloaderGate>} />
+        <Route path="alviam564/PokemonUTVUB/unbrokenbonds.netlify.app" element={<PreloaderGate setid="sm10"><UnbrokenBond /></PreloaderGate>} />
+        <Route path="alviam564/PokemonUTVUB/card/:id.netlify.app" element={<CardFinder />} />
+        <Route path="alviam564/PokemonUTVUB/search/:searchTerm.netlify.app" element={<Search />} /> 
       </Routes>
     </Router>
   );
