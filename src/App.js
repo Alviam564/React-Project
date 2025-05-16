@@ -12,10 +12,10 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home /> } />
-        <Route path="/PokemonUTVUB/teamup.netlify.app" element={<PreloaderGate setid="sm9"><TeamUp /></PreloaderGate>} />
-        <Route path="/PokemonUTVUB/unbrokenbonds.netlify.app" element={<PreloaderGate setid="sm10"><UnbrokenBond /></PreloaderGate>} />
-        <Route path="/PokemonUTVUB/card/:id.netlify.app" element={<CardFinder />} />
-        <Route path="/PokemonUTVUB/search/:searchTerm.netlify.app" element={<Search />} /> 
+        <Route path="/teamup" element={<PreloaderGate setid="sm9"><TeamUp /></PreloaderGate>} />
+        <Route path="/unbrokenbonds" element={<PreloaderGate setid="sm10"><UnbrokenBond /></PreloaderGate>} />
+        <Route path="/card/:id" element={<CardFinder />} />
+        <Route path="/search/:searchTerm" element={<Search />} /> 
       </Routes>
     </Router>
   );
