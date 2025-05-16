@@ -5,10 +5,12 @@ import PZ  from "../assets/P&Z.jpeg"
 import PCB  from "../assets/Pokemon card back.jpg"
 import PTCGL  from "../assets/Pokémon_Trading_Card_Game_logo.svg.png"
 import TUL  from "../assets/TU logo.png"
-import TUS  from "../assets/TU symbol.png"
 import UBL from "../assets/UB logo.png"
-import UBS  from "../assets/UB symbol.png"
 import UBTUR  from "../assets/UB VS TU Reverse1.jpg"
 import UBTU from "../assets/UB VS TU.jpg"
+import P from "../assets/Pikachu.png"
+import Z from "../assets/Zekrom.png"
+import R from "../assets/Reshiram.png"
+import C from "../assets/Charizard.png"
 
-export { CRWC, CR, PZWC, PZ, PCB, PTCGL, TUL, TUS, UBL, UBS, UBTUR, UBTU }
+export { P, Z, R, C, CRWC, CR, PZWC, PZ, PCB, PTCGL, TUL, UBL, UBTUR, UBTU }

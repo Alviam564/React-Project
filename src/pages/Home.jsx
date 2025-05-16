@@ -1,8 +1,14 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import { TUL, UBL, UBTU, UBTUR, PTCGL } from "../utils/images.js"
 
 const Home = () => {
+  useEffect(() =>  {
+      const favicon = document.querySelector("link[rel='icon']");
+      if (favicon) {
+          favicon.href = "/file-pokeball-png-0.png";
+      }
+      }, []);
   return (
     <div className="background-wrapper">
       <div>

@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Error from '../components/Error';
+import { API_HEADER, BASE_URL } from '../utils/fetchfromApi';
 
 const Search = () => {
   const { searchTerm } = useParams();
@@ -14,7 +14,7 @@ const Search = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('https://api.pokemontcg.io/v2/cards');
+        const response = await fetch(`${BASE_URL}/cards`, { headers: API_HEADER });
         const data = await response.json();
         setCardsData(data.data);
         setLoading(false);
@@ -47,7 +47,7 @@ const Search = () => {
   }
 
   if (error) {
-    return <p>{Error}</p>;
+    return <p>Oof the API has been used up for now or an Error has occurred.</p>;
   }
 
   return (

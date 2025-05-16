@@ -1,150 +1,125 @@
-import NavbarU from "../components/NavbarU"
+import Navbar from "../components/Navbar"
 import BackGround from "../components/BackGround"
-import FooterU from "../components/FooterU"
-import { UBL } from "../utils/images"
-import SearchbarUS from "../components/SearchbarUS"
-import SearchbarUA from "../components/SearchbarUA"
-import Search from "./Search"
+import Footer from "../components/Footer"
+import {C, R, UBL, CR, TUL, CRWC } from "../utils/images"
+import Display from "../components/Display"
+import SearchbarSolo from "../components/SearchbarSolo"
+import SearchbarAll from "../components/SearchbarAll"
+import Filters from "../components/Filters"
+import React, { useEffect, useState, useCallback } from "react"
+import Loader from "../components/Loader"
 
+const subtypes = ['Basic', 'Stage 1', 'Stage 2', 'TAG TEAM', 'GX', 'Ultra Beast','Supporter', 'Item', 'Pokémon Tool', 'Stadium', 'Special'];
+const rarities = ['Common', 'Uncommon', 'Rare', 'Rare Holo', 'Rare Holo GX', 'Rare Ultra', 'Rare Rainbow', 'Rare Secret', 'Promo'];
+const energyTypes = ['Grass', 'Fire', 'Water', 'Lightning', 'Psychic', 'Fighting', 'Darkness', 'Metal', 'Fairy', 'Colorless'];
+const priceTypes = ['normal', 'reverseHolofoil', 'holofoil'];
+const priceRanges = ['low to high', 'high to low'];
 
 const UnbrokenBonds = () => {
+    const [isBackgroundLoaded, setIsBackgroundLoaded] = useState(false);
+    const [minDelayPassed, setMinDelayPassed] = useState(false);
+    const isLoading = !(isBackgroundLoaded && minDelayPassed);
+    const onLoaded = useCallback(() => {
+      setIsBackgroundLoaded(true);
+    }, []);
+
+    const [filters, setFilters] = useState({
+        cardtype: '',
+        subtypes: '',
+        energytypes: '',
+        rarity: '',
+        priceType: '',
+        priceRange: '',
+      });
+      
+      const handleFilterChange = (e) => {
+        const { id, value } = e.target;
+        setFilters(prev => ({ ...prev, [id]: value }));
+      };
+    
+
+
+    useEffect(() =>  {
+        const favicon = document.querySelector("link[rel='icon']");
+        if (favicon) {
+            favicon.href = "/UB symbol.png";
+        }
+    }, []);
+
+    useEffect(() => {
+        const timer = setTimeout(() => setMinDelayPassed(true), 3000);
+        return () => clearTimeout(timer);
+    }, []);
+
+
+    useEffect(() => {
+        document.body.style.overflow = isLoading ? "hidden" : "auto";
+        return () => {
+        document.body.style.overflow = "auto";
+    };
+    }, [isLoading]);
+
+
     return (
         <div id='UB'>
-            <section>
-                <NavbarU />
-            </section>
+            {isLoading && (
+                <Loader
+                    loaderimg='loader-img2'
+                    loadersides="center-right"
+                    loadercontainer={"loader-containerW"}
+                    img1={R}
+                    img2={C}
+                    img1Start="top-right"
+                    img2Start="bottom-right"
+                />
+            )}
             <main>
-                <BackGround />
+                <section className="Whiteb">
+                    <Navbar 
+                        srcframe = {CR}
+                        team={"Charizard & Reshiram"}
+                        Other={"/teamup"}
+                        oppframe = {TUL}
+                        opplogo = {"TeamUp Logo"}
+                    />
+                </section>
+                <div>
+                    <BackGround 
+                        setid="sm10"
+                        onLoaded={onLoaded}
+                    />
+                </div>
                 <section>
                     <div className="top-e">
                         <img className="title-logo-e" src={ UBL } alt="Unbrokenbonds logo" />
                     </div>
-                    <div className="dfix space colu pad">
-                        <div className="input-solo input-m-r pad">
-                        <SearchbarUA />
-                        </div>
-                        <div className="input-all input-m-r">
-                        <SearchbarUS>
-                            <Search />
-                        </SearchbarUS>
-                        </div>
-                    </div>
-                    <div className="down up">
-                        <div className="content-wrapper OW">
-                            <h1>
-                                <span class="F1">Filters:</span>
-                            </h1>
-                            <div class="content-wrapperll">
-                                <h1>
-                                    <span class="F1">:Sort</span>
-                                </h1>
-                                <button class="btn__menu menu--open OW" onClick="openMenu()">
-                                    <div class="filters-containerUB">
-                                        <div class="filter-section">
-                                            <select class="selectUB">
-                                                <option class="pfix" disabled selected>Sort</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </button>
-                                <div class="menu__backdrop WO">
-                                    <div class="filters-containerUB">
-                                        <button class="btn__menu btn__menu--close dfix OW" onClick="closeMenu()">
-                                            <i class="fa fa-times"></i>
-                                            <p class="pfix rowf">Choose a Type & Range</p>
-                                        </button>
-                                        <div class="filter-section">
-                                            <select id="priceType" class="selectUB" onchange="filterPriceType(event)">
-                                                <option value=""selected> Card Price Types</option>
-                                                <option value="normal">Normal</option>
-                                                <option value="reverseHolofoil">ReverseHolofoil</option>
-                                                <option value="holofoil">Holofoil</option>
-                                            </select>
-                                        </div>
-                                        <div class="filter-section">
-                                            <select id="priceRange" class="selectUB" onchange="filterPriceRange(event)">
-                                                <option value=""selected>Price Ranges</option>
-                                                <option value="LowToHigh">Low to High</option>
-                                                <option value="HighToLow">High to Low</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn__menu menu--open OW openhi" onClick="openMenu()">
-                                <div class="filters-containerUB">
-                                    <div class="filter-section">
-                                        <select class="selectUB">
-                                            <option class="pfix" disabled selected>Filter</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </button>
-                            <div class="menu__backdrop WO">
-                                <div class="filters-containerUB">
-                                    <button class="btn__menu btn__menu--close dfix OW" onClick="closeMenu()">
-                                        <i class="fa fa-times"></i>
-                                    </button>
-                                    <div class="filter-section">
-                                        <select id="cardtype" class="selectUB" onchange="filterSuperType(event)">
-                                            <option value=""selected>Card Type</option>
-                                            <option value="Pokémon">Pokémon</option>
-                                            <option value="Trainer">Trainer</option>
-                                        </select>                
-                                    </div>
-                                    <div class="filter-section">
-                                        <select id="subtypes" class="selectUB" onchange="filterSubTypes(event)">
-                                            <option value=""selected>Subtypes</option>
-                                            <option value="Basic">Basic</option>
-                                            <option value="Stage 1">Stage 1</option>
-                                            <option value="Stage 2">Stage 2</option>
-                                            <option value="TAG TEAM">TAG TEAM</option>
-                                            <option value="GX">GX</option>
-                                            <option value="Ultra Beast">Ultra Beast</option>
-                                            <option value="Supporter">Supporter</option>
-                                            <option value="Item">Item</option>
-                                            <option value="Pokémon Tool">Pokémon Tool</option>
-                                            <option value="Stadium">Stadium</option>
-                                            <option value="Special">Special</option>
-                                        </select>                    
-                                    </div>
-                                    <div class="filter-section">
-                                        <select id="energytypes" class="selectUB" onchange="filterEnergyTypes(event)">
-                                            <option value=""selected>Energy types</option>
-                                            <option value="Grass">Grass</option>
-                                            <option value="Fire">Fire</option>
-                                            <option value="Water">Water</option>
-                                            <option value="Lightning">Lightning</option>
-                                            <option value="Psychic">Psychic</option>
-                                            <option value="Fighting">Fighting</option>
-                                            <option value="Darkness">Darkness</option>
-                                            <option value="Metal">Metal</option>
-                                            <option value="Fairy">Fairy</option>
-                                            <option value="Colorless">Colorless</option>
-                                        </select>        
-                                    </div>
-                                    <div class="filter-section">
-                                        <select id="rarity" class="selectUB" onchange="filterRarity(event)">
-                                            <option value=""selected>Rarity</option>
-                                            <option value="Common">Common</option>
-                                            <option value="Uncommon">Uncommon</option>
-                                            <option value="Rare">Rare</option>
-                                            <option value="Rare Holo">Rare Holo</option>
-                                            <option value="Rare Holo GX">Rare Holo GX</option>
-                                            <option value="Rare Ultra">Rare Ultra</option>
-                                            <option value="Rare Rainbow">Rare Rainbow</option>
-                                            <option value="Rare Secret">Rare Secret</option>
-                                            <option value="Promo">Promo</option>
-                                        </select>        
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="card-container"></div>
+                    <Filters
+                        wrapperClass="OW"
+                        filterClass="selectUB"
+                        containerClass="filters-containerUB"
+                        onFilterChange={handleFilterChange}
+                        subtypes={subtypes}
+                        rarities={rarities}
+                        energyTypes={energyTypes}
+                        priceTypes={priceTypes}
+                        priceRanges={priceRanges}
+                    />
+                    <Display cardClassName={"card-UB"}
+                        setQueries={["set.id:sm10"]}
+                        filters={filters}
+                        SearchbarAll={(props) => <SearchbarAll {...props} className="selectUBs"/>}
+                        SearchbarSolo={() => <SearchbarSolo className="selectUBs"  setId="sm10"/>}
+                    />
                 </section>
             </main>
-            <FooterU />
+            {!isLoading && (
+                <Footer
+                    footercN1={"overlay-img main-page-logo main-page-logo-mini-2"}
+                    footercN2={"bg-imageO"}
+                    srcframel={CRWC}
+                    srcframelteam={"Charizard & Reshiram"}
+                />
+            )}
         </div>
     )
 }
