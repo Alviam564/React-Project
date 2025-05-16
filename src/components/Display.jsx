@@ -117,6 +117,7 @@ const Display = ({ setQueries = [], SearchbarAll, SearchbarSolo, cardClassName =
                   <p><strong>Type:</strong> {card.types?.join(", ")}</p>
                   <p><strong>Rarity:</strong> {card.rarity}</p>
                   <p><strong>Set:</strong> {card.set?.name}</p>
+                  <p><strong>Market Price:</strong> ${getMarketPrice(card)}</p>
                   <div dangerouslySetInnerHTML={{ __html: getFormattedPrices(card.tcgplayer?.prices) }} />
                 </div>
               </div>
