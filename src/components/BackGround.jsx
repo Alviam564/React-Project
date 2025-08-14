@@ -1,34 +1,33 @@
 import React, {useEffect, useState} from "react";
 import { PTCGL } from "../utils/images";
-import { API_HEADER, BASE_URL } from "../utils/fetchfromApi";
+import TUCards from "../utils/team-up.json"
+import UBCards from "../utils/unbroken-bonds.json"
+
+const cardSets = {
+  sm9: TUCards,
+  sm10: UBCards
+}
 
 const BackGround = ({ setid, onLoaded}) => {
-    const [cardImages, setCardImages] = useState([])
-    const [cardsData, setCardsData] = useState([]);
-  
+  const [cardImages, setCardImages] = useState([])
+  const [cardsData, setCardsData] = useState([]);
+
   
   const getRandomCardImage = (data) => {
+    if (!data.length) return PTCGL
     const index = Math.floor(Math.random() * data.length)
     return data[index]?.images?.large || PTCGL
   }
-
+  
   useEffect(() => {
-    const fetchCards = async () => {
-      try {
-        const res = await fetch(`${BASE_URL}/cards?q=set.id:${setid}`, { headers: API_HEADER });
-        const json = await res.json();
-        const data = json.data;
-        setCardsData(data);
+    if (!setid) return
+    const cards = cardSets[setid] || []
+    
 
+    const initialImages = Array.from({ length: 7 }, () => getRandomCardImage(cards));
+    setCardImages(initialImages);
 
-        const initialImages = Array.from({ length: 7 }, () => getRandomCardImage(data));
-        setCardImages(initialImages);
-      } catch (error) {
-        console.error("Failed to fetch card data:", error);
-        setCardImages(Array(7).fill(PTCGL));
-        }
-      }
-    fetchCards();
+    setCardsData(cards);
   }, [setid])
 
   useEffect(() => {

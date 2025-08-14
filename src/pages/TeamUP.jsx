@@ -3,8 +3,8 @@ import BackGround from "../components/BackGround"
 import Footer from "../components/Footer"
 import {P, Z, TUL, PZ, UBL, PZWC } from "../utils/images"
 import Display from "../components/Display"
-import SearchbarSolo from "../components/SearchbarSolo"
 import SearchbarAll from "../components/SearchbarAll"
+import SearchbarSolo from "../components/SearchbarSolo"
 import Filters from "../components/Filters"
 import React, { useState, useEffect, useCallback } from 'react';
 import Loader from "../components/Loader"
@@ -19,24 +19,49 @@ const TeamUp = () => {
   const [isBackgroundLoaded, setIsBackgroundLoaded] = useState(false);
   const [minDelayPassed, setMinDelayPassed] = useState(false);
   const isLoading = !(isBackgroundLoaded && minDelayPassed);
+  const [searchTerm, setSearchTerm] = useState('');
+  const handleSearchChange = (newTerm) => {setSearchTerm(newTerm);};
   const onLoaded = useCallback(() => {
     setIsBackgroundLoaded(true);
   }, []);
+
   
-  const [filters, setFilters] = useState({
-    cardtype: '',
-    subtypes: '',
-    energytypes: '',
-    rarity: '',
-    priceType: '',
-    priceRange: '',
-    
-  });
+  const defaultFilters = {
+  cardtype: '',
+  subtypes: [],
+  energytypes: [],
+  rarity: [],
+  priceType: '',
+  priceRange: '',
+};
+
+const [filters, setFilters] = useState(defaultFilters);
+
+const handleFilterChange = (newFilter) => {
+  if (Object.entries(newFilter).some(([key, val]) => {
+    if (["cardtype", "priceType", "priceRange"].includes(key)) {
+      return val === "";
+    }
+    return false;
+  })) {
+    setFilters(defaultFilters);
+  } else {
+    const normalized = { ...newFilter };
+    ["subtypes", "energytypes", "rarity"].forEach(key => {
+      if (Array.isArray(normalized[key])) {
+        normalized[key] = normalized[key].filter(v => v !== "");
+      } else if (normalized[key] === "") {
+        normalized[key] = [];
+      }
+    });
+
+    setFilters(prev => ({
+      ...prev,
+      ...normalized,
+    }));
+  }
+};
   
-  const handleFilterChange = (e) => {
-    const { id, value } = e.target;
-    setFilters(prev => ({ ...prev, [id]: value }));
-  };
 
   useEffect(() =>  {
     const favicon = document.querySelector("link[rel='icon']");
@@ -97,6 +122,7 @@ const TeamUp = () => {
             containerClass="filters-containerTU"
             backdropClass="BY"
             onFilterChange={handleFilterChange}
+            currentFilters={filters}
             subtypes={subtypes}
             rarities={rarities}
             energyTypes={energyTypes}
@@ -105,10 +131,13 @@ const TeamUp = () => {
             />
           <Display 
             cardClassName={"card-TU"}
-            filters={filters}                
+            setName="TeamUp"
+            filters={filters}
+            searchTerm={searchTerm}
+            onSearchChange={handleSearchChange}              
             setQueries={["set.id:sm9", "id:sm09"]}
-            SearchbarAll={(props) => <SearchbarAll {...props} className="selectTUs"/>}
-            SearchbarSolo={() => <SearchbarSolo className="selectTUs" setId={["sm9", "sm09"]}/>}
+            SearchbarAll={SearchbarAll}
+            SearchbarSolo={SearchbarSolo}
           />
         </section>
       </main>

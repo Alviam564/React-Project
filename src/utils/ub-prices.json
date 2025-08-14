@@ -1,0 +1,2818 @@
+[
+  {
+    "sm10-1":{
+        "holofoil":{
+          "low": 9.8,
+          "high": 1474.25
+        }
+    }
+  },
+  {
+    "sm10-2":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-3":{
+        "normal":{
+          "low": 0.06,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.13,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+     "sm10-4":{
+        "normal":{
+          "low": 0.2,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.3,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+     "sm10-5":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.18,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+     "sm10-6":{
+        "normal":{
+          "low": 0.09,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.24,
+          "high": 5.48
+        }
+    }
+  },
+  
+  {
+     "sm10-7":{
+        "normal":{
+          "low": 0.07,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.5,
+          "high": 2.12
+        }
+    }
+  },
+
+  {
+     "sm10-8":{
+        "reverseHolofoil":{
+          "low": 0.36,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.35,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+     "sm10-9":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.08,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-10":{
+        "normal":{
+          "low": 0.14,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.24,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-11":{
+        "normal":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.35,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-12":{
+        "holofoil":{
+          "low": 1.75,
+          "high": 89
+        }
+    }
+  },
+  
+  {
+    "sm10-13":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.09,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-14":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.2,
+          "high": 4.95
+        }
+    }
+  },
+    
+  { 
+    "sm10-15":{
+        "normal":{
+          "low": 0.18,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-16":{
+        "normal":{
+          "low": 0.01,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.09,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-17":{
+        "normal":{
+          "low": 0.15,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.16,
+          "high": 4.95
+        }
+    }  
+  },  
+  
+  {
+    "sm10-18":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.16,
+          "high": 4.95
+        }
+    }  
+  },  
+  
+  {
+    "sm10-19":{
+        "reverseHolofoil":{
+          "low": 0.3,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.5,
+          "high": 67
+        }
+    }
+  },
+    
+  {
+    "sm10-20":{
+        "holofoil":{
+          "low": 29.99,
+          "high": 180
+        }
+    }
+  },
+
+  {
+    "sm10-21":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.14,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-22":{
+        "reverseHolofoil":{
+          "low": 2.19,
+          "high": 3
+        },
+        "holofoil":{
+          "low": 1.96,
+          "high": 3.99
+        }
+    }
+  },
+  
+  {
+    "sm10-23":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.18,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-24":{
+        "normal":{
+          "low": 0.1,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.22,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-25":{
+        "reverseHolofoil":{
+          "low": 0.5,
+          "high": 7.5
+        },
+        "holofoil":{
+          "low": 0.36,
+          "high": 193.04
+        }
+    }
+  },
+
+  {
+    "sm10-26":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.09,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-27":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-28":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.19,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-29":{
+        "normal":{
+          "low": 0.15,
+          "high": 4321
+        },
+        "reverseHolofoil":{
+          "low": 0.35,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-30":{
+        "normal":{
+          "low": 0.01,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.07,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-31":{
+        "normal":{
+          "low": 0.4,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.75,
+          "high": 3.5
+        }
+    }
+  },
+  
+  {
+    "sm10-32":{
+        "normal":{
+          "low": 1.24,
+          "high": 5.95
+        },
+        "reverseHolofoil":{
+          "low": 1.52,
+          "high": 19.99
+        }
+    }
+  },
+  
+  {
+    "sm10-33":{
+        "normal":{
+          "low": 0.15,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.37,
+          "high": 5
+        }
+    }
+  },
+  
+  {
+    "sm10-34":{
+        "normal":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.35,
+          "high": 4.25
+        }
+    }
+  },
+  
+  {
+    "sm10-35":{
+        "holofoil":{
+          "low": 6.3,
+          "high": 629.1
+        }
+    }
+  },
+  
+  {
+    "sm10-36":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.05,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-37":{
+        "normal":{
+          "low": 0.07,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-38":{
+        "normal":{
+          "low": 0.1,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-39":{
+        "normal":{
+          "low": 0.24,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.29,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-40":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-41":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.27,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-42":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.12,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-43":{
+        "reverseHolofoil":{
+          "low": 0.5,
+          "high": 19.99
+        },
+        "holofoil":{
+          "low": 0.75,
+          "high": 2.4
+        }
+    }
+  },
+    
+  {
+    "sm10-44":{
+        "normal":{
+          "low": 0.02,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-45":{
+        "normal":{
+          "low": 0.2,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.15,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-46":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.08,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-47":{
+        "normal":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-48":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.07,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-49":{
+        "normal":{
+          "low": 0.11,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.19,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-50":{
+        "reverseHolofoil":{
+          "low": 0.29,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-51":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.14,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-52":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.19,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-53":{
+        "normal":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 1,
+          "high": 86.26
+        }
+    }
+  },
+    
+  {
+    "sm10-54":{
+        "normal":{
+          "low": 0.2,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 1,
+          "high": 9.99
+        }
+    }
+  },
+  
+  {
+    "sm10-55":{
+        "normal":{
+          "low": 0.18,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.44,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-56":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.2,
+          "high":4.95
+        }
+    }
+  },
+
+  {
+    "sm10-57":{
+        "holofoil":{
+          "low": 5.55,
+          "high": 24.99
+        }
+    }
+  },
+  
+  {
+    "sm10-58":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-59":{
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.21,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-60":{
+        "normal":{
+          "low": 0.2,
+          "high": 4321
+        },
+        "reverseHolofoil":{
+          "low": 0.43,
+          "high": 4.95
+        }
+    }
+  },
+  
+  
+  {
+    "sm10-61":{
+        "holofoil":{
+          "low": 13.51,
+          "high": 110
+        }
+    }
+  },
+  
+  {
+    "sm10-62":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.12,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-63":{
+        "normal":{
+          "low": 0.22,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-64":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.15,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-65":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-66":{
+        "reverseHolofoil":{
+          "low": 0.32,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.19,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-67":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.29,
+          "high": 4.95
+        }
+    }
+    },
+  
+  {
+    "sm10-68":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-69":{
+        "normal":{
+          "low": 0.1,
+          "high": 89
+        },
+        "reverseHolofoil":{
+          "low": 0.44,
+          "high": 2.77
+        }
+    }
+  },
+  
+  {
+    "sm10-70":{
+        "normal":{
+          "low": 5.99,
+          "high": 12.99
+        },
+        "reverseHolofoil":{
+          "low": 16.12,
+          "high": 22.68
+        }
+    }
+  },
+  
+  {
+    "sm10-71":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.05,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-72":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.2,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-73":{
+        "normal":{
+          "low": 0.01,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.18,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-74":{
+        "normal":{
+          "low": 0.35,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.5,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-75":{
+        "normal":{
+          "low": 0.5,
+          "high": 3
+        },
+        "reverseHolofoil":{
+          "low": 2.12,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-76":{
+        "reverseHolofoil":{
+          "low": 5.44,
+          "high": 4321
+        },
+        "holofoil":{
+          "low": 5.21,
+          "high": 19.99
+        }
+    }
+  },
+  
+  {
+    "sm10-77":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.08,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-78":{
+        "normal":{
+          "low": 0.22,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.17,
+          "high": 8
+        }
+    }
+  },
+  
+  {
+    "sm10-79":{
+        "normal":{
+          "low": 0.08,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.24,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-80":{
+        "normal":{
+          "low": 0.15,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-81":{
+        "reverseHolofoil":{
+          "low": 0.45,
+          "high": 6
+        },
+        "holofoil":{
+          "low": 0.25,
+          "high": 6
+        }
+    }
+  },
+  
+  {
+    "sm10-82":{
+        "holofoil":{
+          "low": 15.86,
+          "high": 200
+        }
+    }
+  },
+  
+  {
+    "sm10-83":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.12,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-84":{
+        "normal":{
+          "low": 0.19,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.15,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-85":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-86":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.18,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-87":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-88":{
+        "normal":{
+          "low": 0.01,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.19,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-89":{
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.21,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-90":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.24,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-91":{
+        "normal":{
+          "low": 0.15,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.35,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-92":{
+        "normal":{
+          "low": 0.01,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.07,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-93":{
+        "normal":{
+          "low": 0.01,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-94":{
+        "normal":{
+          "low": 0.08,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.3,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-95":{
+        "normal":{
+          "low": 0.15,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-96":{
+        "normal":{
+          "low": 0.09,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-97":{
+        "normal":{
+          "low": 0.17,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.28,
+          "high": 1.64
+        }
+    }
+  },
+  
+  {
+    "sm10-98":{
+        "normal":{
+          "low": 0.02,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-99":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.2,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-100":{
+        "normal":{
+          "low": 0.15,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.76,
+          "high": 0.99
+        }
+    }
+  },
+  
+  {
+    "sm10-101":{
+        "normal":{
+          "low": 0.1,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 2.46,
+          "high": 4.99
+        }
+    }
+  },
+  
+  {
+    "sm10-102":{
+        "normal":{
+          "low": 0.06,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.11,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-103":{
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-104":{
+        "normal":{
+          "low": 0.02,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.07,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-105":{
+        "normal":{
+          "low": 0.14,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.3,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-106":{
+        "reverseHolofoil":{
+          "low": 1.2,
+          "high": 2.18
+        },
+        "holofoil":{
+          "low": 1,
+          "high": 19.99
+        }
+    }
+  },
+    
+  {
+    "sm10-107":{
+        "holofoil":{
+          "low": 25.2,
+          "high": 99.95
+        }
+    }
+  },
+  
+  {
+    "sm10-108":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.08,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-109":{
+        "holofoil":{
+          "low": 1,
+          "high": 10
+        }
+    }
+  },
+  
+  {
+    "sm10-110":{
+        "normal":{
+          "low": 0.02,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.11,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-111":{
+        "normal":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.41,
+          "high": 2.49
+        }
+    }
+  },
+  
+  {
+    "sm10-112":{
+        "reverseHolofoil":{
+          "low": 2.21,
+          "high": 19.99
+        },
+        "holofoil":{
+          "low": 1.99,
+          "high": 19.99
+        }
+    }
+  },
+  
+  {
+    "sm10-113":{
+        "normal":{
+          "low": 0.06,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.15,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-114":{
+        "normal":{
+          "low": 0.08,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.12,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-115":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.15,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-116":{
+        "normal":{
+          "low": 0.15,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.27,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-117":{
+        "reverseHolofoil":{
+          "low": 2.27,
+          "high": 8.27
+        },
+        "holofoil":{
+          "low": 2.99,
+          "high": 19.99
+        }
+    }
+  },
+  
+  {
+    "sm10-118":{
+        "normal":{
+          "low": 0.02,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-119":{
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.18,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-120":{
+        "holofoil":{
+          "low": 19.99,
+          "high": 49.95
+        }
+    }
+  },
+  
+  {
+    "sm10-121":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.18,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-122":{
+        "normal":{
+          "low": 0.15,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.3,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-123":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-124":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.18,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-125":{
+        "normal":{
+          "low": 0.17,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-126":{
+        "reverseHolofoil":{
+          "low": 0.46,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.4,
+          "high": 2.99
+        }
+    }
+  },
+  
+  {
+    "sm10-127":{
+        "normal":{
+          "low": 0.13,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.2,
+          "high": 4321
+        }
+    }
+  },
+  
+  {
+    "sm10-128":{
+        "normal":{
+          "low": 0.01,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.14,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-129":{
+        "reverseHolofoil":{
+          "low": 0.28,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.16,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-130":{
+        "holofoil":{
+          "low": 45.1,
+          "high": 129.95
+        }
+    }
+  },
+    
+  {
+    "sm10-131":{
+        "normal":{
+          "low": 1.3,
+          "high": 4.32
+        },
+        "reverseHolofoil":{
+          "low": 7.99,
+          "high": 10.91
+        }
+    }
+  },
+  
+  {
+    "sm10-132":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.08,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-133":{
+        "normal":{
+          "low": 0.25,
+          "high": 19.99
+        },
+        "reverseHolofoil":{
+          "low": 0.29,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-134":{
+        "normal":{
+          "low": 0.2,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.32,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-135":{
+        "normal":{
+          "low": 0.44,
+          "high": 6.43
+        },
+        "reverseHolofoil":{
+          "low": 1,
+          "high": 19.99
+        }
+    }
+  },
+  {
+    "sm10-136":{
+        "normal":{
+          "low": 0.05,
+          "high": 20
+        },
+        "reverseHolofoil":{
+          "low": 0.36,
+          "high": 4.99
+        }
+    }
+  },
+
+  {
+    "sm10-137":{
+        "normal":{
+          "low": 0.15,
+          "high":4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.64,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-138":{
+        "reverseHolofoil":{
+          "low": 0.4,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.49,
+          "high": 1.99
+        }
+    }  
+  },  
+
+  {
+    "sm10-139":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.11,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-140":{
+        "holofoil":{
+          "low": 1.71,
+          "high": 89
+        }
+    }
+  },
+
+  {
+    "sm10-141":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.17,
+          "high": 4.95
+        }
+    }    
+  },    
+
+  {
+    "sm10-142":{
+        "normal":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.5,
+          "high": 4.99
+        }
+    }  
+  },
+  
+  {
+    "sm10-143":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-144":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.14,
+          "high": 0.95
+        }
+    }  
+  },  
+  
+  {
+    "sm10-145":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }  
+  },  
+  
+  {
+    "sm10-146":{
+        "normal":{
+          "low": 0.1,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }  
+  },  
+  
+  {
+    "sm10-147":{
+        "normal":{
+          "low": 0.08,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 19.99
+        }
+    }    
+  },    
+
+  {
+    "sm10-148":{
+        "normal":{
+          "low": 0.09,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.24,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-149":{
+        "holofoil":{
+          "low": 1.41,
+          "high": 3.99
+        }
+    }
+  },
+  
+  {
+    "sm10-150":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.07,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-151":{
+        "normal":{
+          "low": 0.07,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-152":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.17,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-153":{
+        "normal":{
+          "low": 0.18,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }  
+  },  
+
+  {
+    "sm10-154":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-155":{
+        "normal":{
+          "low": 0.1,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.19,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-156":{
+        "normal":{
+          "low": 0.09,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.5,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-157":{
+        "reverseHolofoil":{
+          "low": 0.76,
+          "high": 8.99
+        },
+        "holofoil":{
+          "low": 0.84,
+          "high": 13.99
+        }
+    }
+  },
+
+  {
+    "sm10-158":{
+        "reverseHolofoil":{
+          "low": 23.5,
+          "high": 30.99
+        },
+        "holofoil":{
+          "low": 22,
+          "high": 45.9
+        }
+    }
+  },
+  
+  {
+    "sm10-159":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.08,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-160":{
+        "normal":{
+          "low": 0.14,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-161":{
+        "normal":{
+          "low": 0.2,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.97,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-162":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+      
+  {
+    "sm10-163":{
+        "holofoil":{
+          "low": 1.5,
+          "high": 89
+        }
+    }
+  },
+      
+  {
+    "sm10-164":{
+        "normal":{
+          "low": 0.02,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.15,
+          "high": 4.95
+        }
+    }
+  },
+      
+  {
+    "sm10-165":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+      
+  {
+    "sm10-166":{
+        "normal":{
+          "low": 0.01,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.05,
+          "high": 4.95
+        }
+    }
+  },
+      
+  {
+    "sm10-167":{
+        "normal":{
+          "low": 0.07,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.09,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-168":{
+        "normal":{
+          "low": 0.09,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.11,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-169":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+      
+  {
+    "sm10-170":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.3,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-171":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.16,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-172":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.14,
+          "high": 4.95
+        }
+    }
+  },
+  {
+    "sm10-173":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.5,
+          "high": 3.67
+        }
+    }
+  },
+
+  {
+    "sm10-174":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.13,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-175":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.66,
+          "high": 5
+        }
+    }
+  },
+
+  {
+    "sm10-176":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.2,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-177":{
+        "normal":{
+          "low": 0.07,
+          "high":4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.15,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-178":{
+        "normal":{
+          "low": 0.04,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-179":{
+        "normal":{
+          "low": 0.13,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-180":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.21,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-181":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.09,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-182":{
+        "normal":{
+          "low": 1,
+          "high": 10.96
+        },
+        "reverseHolofoil":{
+          "low": 3.5,
+          "high": 6.98
+        }
+    }
+  },
+    
+  {
+    "sm10-183":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.14,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-184":{
+        "reverseHolofoil":{
+          "low": 0.25,
+          "high": 4.95
+        },
+        "holofoil":{
+          "low": 0.1,
+          "high": 4.95
+        }
+    }
+  },
+    
+  {
+    "sm10-185":{
+        "normal":{
+          "low": 0.03,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.11,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+    "sm10-186":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.11,
+          "high": 4.95
+        }
+    }
+  },
+      
+  {
+    "sm10-187":{
+        "normal":{
+          "low": 0.02,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.21,
+          "high": 4.95
+        }
+    }
+  },
+
+  {
+     "sm10-188":{
+        "normal":{
+          "low": 0.02,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.05,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-189":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.38,
+          "high": 5
+        }
+    }
+  },
+    
+  {
+    "sm10-190":{
+        "normal":{
+          "low": 0.05,
+          "high": 4.95
+        },
+        "reverseHolofoil":{
+          "low": 0.19,
+          "high": 4.95
+        }
+    }
+  },
+  
+  {
+    "sm10-191":{
+        "holofoil":{
+          "low": 7.11,
+          "high": 125
+        }
+    }
+  },
+
+  {
+    "sm10-192":{
+        "holofoil":{
+          "low": 82.99,
+          "high": 159.95
+        }
+    }
+  },
+  
+  {
+    "sm10-193":{
+        "holofoil":{
+          "low": 3.11,
+          "high": 89
+        }
+    }
+  },
+  
+  {
+    "sm10-194":{
+        "holofoil":{
+          "low": 92.99,
+          "high": 250
+        }
+    }
+  },
+  
+  {
+    "sm10-195":{
+        "holofoil":{
+          "low": 10.83,
+          "high": 39.99
+        }
+    }
+  },
+
+  {
+    "sm10-196":{
+        "holofoil":{
+          "low": 11.29,
+          "high": 44.69
+        }
+    }
+  },
+
+  {
+    "sm10-197":{
+        "holofoil":{
+          "low": 89.94,
+          "high": 199.99
+        }
+    }
+  },
+  
+  {
+    "sm10-198":{
+        "holofoil":{
+          "low": 36.7,
+          "high": 99.97
+        }
+    }
+  },
+  
+  {
+    "sm10-199":{
+        "holofoil":{
+          "low": 199.99,
+          "high": 400
+        }
+    }
+  },
+  
+  {
+    "sm10-200":{
+        "holofoil":{
+          "low": 53.2,
+          "high": 149.95
+        }
+    }
+  },
+  
+  {
+    "sm10-201":{
+        "holofoil":{
+          "low": 244,
+          "high": 499.95
+        }
+    }
+  },
+  
+  {
+    "sm10-202":{
+        "holofoil":{
+          "low": 2.32,
+          "high": 89
+        }
+    }
+  },
+  
+  {
+    "sm10-203":{
+        "holofoil":{
+          "low": 41.99,
+          "high": 74.95
+        }
+    }
+  },
+  
+  {
+    "sm10-204":{
+        "holofoil":{
+          "low": 73.99,
+          "high": 199.95
+        }
+    }
+  },
+
+  {
+    "sm10-205":{
+        "holofoil":{
+          "low": 450,
+          "high": 999.95
+        }
+    }
+  },
+
+  {
+    "sm10-206":{
+        "holofoil":{
+          "low": 19.95,
+          "high": 19.99
+        }
+    }
+  },
+    
+  {
+    "sm10-207":{
+        "holofoil":{
+          "low": 3.45,
+          "high": 19.99
+        }
+    }
+  },
+  
+  {
+    "sm10-208":{
+        "holofoil":{
+          "low": 3.2,
+          "high": 20
+        }
+    }
+  },
+  
+  {
+    "sm10-209":{
+        "holofoil":{
+          "low": 98,
+          "high": 169.99
+        }
+    }
+  },
+  
+  {
+    "sm10-210":{
+        "holofoil":{
+          "low": 13,
+          "high": 59.95
+        }
+    }
+  },
+  
+  {
+    "sm10-211":{
+        "holofoil":{
+          "low": 18.22,
+          "high": 59.95
+        }
+    }
+  },
+  
+  {
+    "sm10-212":{
+        "holofoil":{
+          "low": 4.3,
+          "high": 39.95
+        }
+    }
+  },
+  
+  {
+    "sm10-213":{
+        "holofoil":{
+          "low": 100.14,
+          "high": 199.69
+        }
+    }
+  },
+  
+  {
+    "sm10-214":{
+        "holofoil":{
+          "low": 38,
+          "high": 100
+        }
+    }
+  },
+  
+  {
+    "sm10-215":{
+        "holofoil":{
+          "low": 24.53,
+          "high": 177.45
+        }
+    }
+  },
+    
+  {
+    "sm10-216":{
+        "holofoil":{
+          "low": 9.12,
+          "high": 21.3
+        }
+    }
+  },
+  
+  {
+    "sm10-217":{
+        "holofoil":{
+          "low": 199.69,
+          "high": 299.95
+        }
+    }
+  },
+  
+  {
+    "sm10-218":{
+        "holofoil":{
+          "low": 80.61,
+          "high": 199.69
+        }
+    }
+  },
+  
+  {
+    "sm10-219":{
+        "holofoil":{
+          "low": 25.75,
+          "high": 69.95
+        }
+    }
+  },
+  
+  {
+    "sm10-220":{
+        "holofoil":{
+          "low": 36.75,
+          "high": 80
+        }
+    }
+  },
+  
+  {
+    "sm10-221":{
+        "holofoil":{
+          "low": 49.99,
+          "high": 149.99
+        }
+    }
+  },
+  
+  {
+    "sm10-222":{
+        "holofoil":{
+          "low": 69.99,
+          "high": 150
+        }
+    }
+  },
+  
+  {
+    "sm10-223":{
+        "holofoil":{
+          "low": 7.54,
+          "high": 30
+        }
+    }
+  },
+  
+  {
+    "sm10-224":{
+        "holofoil":{
+          "low": 51,
+          "high": 140.6
+        }
+    }
+  },
+  
+  {
+    "sm10-225":{
+        "holofoil":{
+          "low": 99.72,
+          "high": 299.95
+        }
+    }
+  },
+  
+  {
+    "sm10-226":{
+        "holofoil":{
+          "low": 12.08,
+          "high": 39.5
+        }
+    }
+  },
+  
+  {
+    "sm10-227":{
+        "holofoil":{
+          "low": 14.99,
+          "high": 9999.95
+        }
+    }
+  },
+  
+  {
+    "sm10-228":{
+        "holofoil":{
+          "low": 6.48,
+          "high": 10.6
+        }
+    }
+  },
+  
+  {
+    "sm10-229":{
+        "holofoil":{
+          "low": 2.38,
+          "high": 29.95
+        }
+    }
+  },
+  
+  {
+    "sm10-230":{
+        "holofoil":{
+          "low": 3.5,
+          "high": 89
+        }
+    }
+  },
+    
+  {
+    "sm10-231":{
+        "holofoil":{
+          "low": 6.5,
+          "high": 49.95
+        }
+    }
+  },
+  
+  {
+    "sm10-232":{
+        "holofoil":{
+          "low": 2.95,
+          "high": 29.95
+        }
+    }
+  },
+  
+  {
+    "sm10-233":{
+        "holofoil":{
+          "low": 53.24,
+          "high": 250
+        }
+    }
+  },
+
+  {
+    "sm10-234":{
+        "holofoil":{
+          "low": 5.16,
+          "high": 89
+        }
+    }
+  },
+  
+  {
+    "smp-SM10":{
+        "holofoil":{
+          "low": 13.63,
+          "high": 43.62
+        }
+    }
+  }
+]

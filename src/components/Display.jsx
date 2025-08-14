@@ -1,74 +1,108 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { API_HEADER, BASE_URL } from "../utils/fetchfromApi";
+import TUCards from "../utils/team-up.json";
+import TUPrice from "../utils/tu-prices.json";
+import UBCards from "../utils/unbroken-bonds.json";
+import UBPrice from "../utils/ub-prices.json";
 
+const dataSets = {
+  TeamUp: { cards: TUCards, prices: TUPrice },
+  UnbrokenBonds: { cards: UBCards, prices: UBPrice },
+};
 
-const Display = ({ setQueries = [], SearchbarAll, SearchbarSolo, cardClassName = "card-default", filters = {} }) => {
+const Display = ({
+  setName = "TeamUp",
+  SearchbarAll,
+  cardClassName = "card-default",
+  filters = {},
+  searchTerm = "",
+  onSearchChange = () => {},
+}) => {
   const [cardsData, setCardsData] = useState([]);
   const [filteredCards, setFilteredCards] = useState([]);
-  
 
   useEffect(() => {
-    const fetchCards = async () => {
-      try {
-        const fetches = await Promise.all(
-          setQueries.map((q) =>
-          fetch(`${BASE_URL}/cards?q=${q}`, { headers: API_HEADER }).then((res) => res.json())
-        )
-      );
-                 
-      const combinedData = fetches.flatMap((json) => json.data || []);
-      setCardsData(combinedData);
-      setFilteredCards(combinedData);
-    } catch (error) {
-      console.error("Failed to fetch card data:", error);
+    if (!setName || !dataSets[setName]) {
+      setCardsData([]);
+      setFilteredCards([]);
+      return;
     }
-  }
 
-  fetchCards();
-  }, [setQueries]);
+    const { cards, prices } = dataSets[setName];
+
+    const priceMap = {};
+    prices.forEach((priceItem) => {
+      const cardId = Object.keys(priceItem).find((k) => k !== "");
+      if (cardId) {
+        priceMap[cardId] = priceItem[cardId];
+      }
+    });
+
+    const merged = cards.map((card) => ({
+      ...card,
+      prices: priceMap[card.id] || {},
+    }));
+
+    setCardsData(merged);
+    setFilteredCards(merged);
+  }, [setName]);
 
   useEffect(() => {
-  if (!cardsData.length) return
+    if (!cardsData.length) return;
 
-  let updated = [...cardsData];
+    let updated = [...cardsData];
 
-  if (filters.cardtype) {
-    updated = updated.filter(card => card.supertype === filters.cardtype);
-  }
+    if (filters.cardtype) {
+      updated = updated.filter(card => card.supertype === filters.cardtype);
+    }
 
-  if (filters.subtypes) {
-    updated = updated.filter(card => card.subtypes?.includes(filters.subtypes));
-  }
+    if (filters.subtypes?.length > 0) {
+      updated = updated.filter(card =>
+        card.subtypes?.some(st => filters.subtypes.includes(st))
+      );
+    }
 
-  if (filters.energytypes) {
-    updated = updated.filter(card => card.types?.includes(filters.energytypes));
-  }
+    if (filters.energytypes?.length > 0) {
+      updated = updated.filter(card =>
+        card.types?.some(type => filters.energytypes.includes(type))
+      );
+    }
 
-  if (filters.rarity) {
-    updated = updated.filter(card => card.rarity === filters.rarity);
-  }
+    if (filters.rarity?.length > 0) {
+      updated = updated.filter(card => filters.rarity.includes(card.rarity));
+    }
 
-  if (filters.priceType && filters.priceRange) {
+    if (filters.priceType && filters.priceRange) {
+
   const priceType = filters.priceType;
   const priceField = filters.priceRange === "low to high" ? "low" : "high";
 
-  updated = updated.filter(card =>
-    typeof card.tcgplayer?.prices?.[priceType]?.[priceField] === "number"
-  );
+  updated = updated.filter(card => {
+    const val = card.prices?.[priceType]?.[priceField];
+    return typeof val === "number";
+  });
 
   updated.sort((a, b) => {
-    const aPrice = a.tcgplayer.prices[priceType][priceField];
-    const bPrice = b.tcgplayer.prices[priceType][priceField];
-
-    return filters.priceRange === "low to high"
-      ? aPrice - bPrice
-      : bPrice - aPrice;
+    const aPrice = a.prices[priceType][priceField];
+    const bPrice = b.prices[priceType][priceField];
+    return filters.priceRange === "low to high" ? aPrice - bPrice : bPrice - aPrice;
   });
-}
-  
-  setFilteredCards(updated);
-}, [cardsData, filters]);
+    }
+
+    if (searchTerm?.trim().length >= 2) {
+      const filterUpper = searchTerm.toUpperCase();
+      updated = updated.filter(
+        card =>
+          card.name?.toUpperCase().includes(filterUpper) ||
+          card.id?.toUpperCase().includes(filterUpper) ||
+          card.supertype?.toUpperCase().includes(filterUpper) ||
+          card.types?.some(type => type.toUpperCase().includes(filterUpper)) ||
+          card.rarity?.toUpperCase().includes(filterUpper)
+      );
+    }
+
+    setFilteredCards(updated);
+  }, [cardsData, filters, searchTerm]);
 
   const getFormattedPrices = (prices) => {
     if (!prices) return "<p>No price data</p>";
@@ -83,50 +117,53 @@ const Display = ({ setQueries = [], SearchbarAll, SearchbarSolo, cardClassName =
       .join("");
   };
 
-  const getMarketPrice = (card) => {
-    const priceType = ["normal", "reverseHolofoil", "holofoil"];
-    for (const type of priceType) {
-      const price = card.tcgplayer?.prices?.[type]?.market;
-      if (typeof price === "number") return price
-    }
-    return "price not found"
-  };
+  const classNameMap = {
+   TeamUp: "selectTUs",
+    UnbrokenBonds: "selectUBs",
+  }
+  const Barcolor = classNameMap[setName] || "";
 
   return (
     <div>
       <div className="dfix space colu pad">
-        <div className="input-solo input-m-r pad">
-          {SearchbarAll && <SearchbarAll cardsData={cardsData} onFilter={setFilteredCards} />}
-        </div>
         <div className="input-all input-m-r pad">
-        { SearchbarSolo && <SearchbarSolo /> }
+          {SearchbarAll && (
+            <SearchbarAll
+              searchTerm={searchTerm}
+              onSearchChange={onSearchChange}
+              className={Barcolor}
+              cardsData={cardsData}
+            />
+          )}
         </div>
       </div>
 
       <div id="card-container">
-          {filteredCards.length > 0 ? (
-            filteredCards.map((card) => (
-              <div className={cardClassName} key={card.id}>
-                <div key={card.id}>
-                  <h3>{card.name}</h3>
-                  <p><strong>Supertype:</strong> {card.supertype}</p>
-                  <Link to={`/card/${card.id}`}>
+        {filteredCards.length > 0 ? (
+          filteredCards.map((card) => (
+            <div className={cardClassName} key={card.id}>
+              <div>
+                <h3>{card.name}</h3>
+                <p><strong>Supertype:</strong> {card.supertype}</p>
+                <Link to={`/cards/${card.id}`}>
                   <img src={card.images?.small} alt={card.name} />
-                  </Link>
-                  <p><strong>ID:</strong> {card.id}</p>
-                  <p><strong>Type:</strong> {card.types?.join(", ")}</p>
-                  <p><strong>Rarity:</strong> {card.rarity}</p>
-                  <p><strong>Set:</strong> {card.set?.name}</p>
-                  <p><strong>Market Price:</strong> ${getMarketPrice(card)}</p>
-                  <div dangerouslySetInnerHTML={{ __html: getFormattedPrices(card.tcgplayer?.prices) }} />
-                </div>
+                </Link>
+                <p><strong>ID:</strong> {card.id}</p>
+                <p><strong>Type:</strong> {card.types?.join(", ")}</p>
+                <p><strong>Rarity:</strong> {card.rarity}</p>
+                <p><strong>Set:</strong> {card.set?.name}</p>
+                <div
+                  dangerouslySetInnerHTML={{ __html: getFormattedPrices(card.prices) }}
+                />
+                <p><strong>Last Price Updated:</strong> 08/11/2025</p>
               </div>
-            ))
-         ) : cardsData.length > 0 ? (
-            <h1>No cards match the selected filters.</h1>
-          ) : (
-            <h1>Loading cards...</h1>
-          )}
+            </div>
+          ))
+        ) : cardsData.length > 0 ? (
+          <h1>No cards match the selected filters.</h1>
+        ) : (
+          <h1>Loading cards...</h1>
+        )}
       </div>
     </div>
   );

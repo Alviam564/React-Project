@@ -283,6 +283,14 @@ html {
   margin: 100px 0;
 }
 
+.just-left {
+  justify-content: flex-start;
+}
+
+.just-right {
+  justify-content: flex-end;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -456,13 +464,13 @@ bottom: 73.7%;
 }
 
 .input-all {
-  width: 220px;
+  width: 100px;
 }
 .input-m-r {
   margin-right: 127px;
 }
 .input-solo {
-  width: 230px;
+  width: 100px;
 }
 
 .Ffix {
@@ -531,6 +539,10 @@ bottom: 73.7%;
 }
 .WO {
   background-color: white;
+}
+
+.bb {
+  background-color: black
 }
 
 footer {

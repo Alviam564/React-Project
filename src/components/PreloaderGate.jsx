@@ -9,7 +9,7 @@ const PreloaderGate = ({ children, setid }) => {
       setIsReady(true)
     }
 
-    const timeout = setTimeout(onLoaded, 2000);
+    const timeout = setTimeout(onLoaded, 2600);
 
     return () => clearTimeout(timeout);
   }, [setid])

@@ -11,9 +11,23 @@ const Filters = ({
   energyTypes = [],
   priceTypes = [],
   priceRanges = [],
+  currentFilters = {},
 }) => {
   const [isSortOpen, setIsSortOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  const handleSingleChange = (e) => {
+    const { id, value } = e.target;
+    onFilterChange({ [id]: value });
+  };
+
+  const handleMultiChange = (e) => {
+    const { id, options } = e.target;
+    const selectedValues = Array.from(options)
+      .filter(option => option.selected)
+      .map(option => option.value);
+    onFilterChange({ [id]: selectedValues });
+  };
 
   return (
     <div className="down up">
@@ -35,7 +49,7 @@ const Filters = ({
                   <p className="pfix rowf">Choose a Type & Range</p>
                 </button>
                 <div className="filter-section">
-                  <select id="priceType" className={filterClass} onChange={onFilterChange}>
+                  <select id="priceType" className={filterClass} onChange={handleSingleChange}>
                     <option value="">Card Price Types</option>
                     {priceTypes.map((type) => (
                       <option key={type} value={type}>{type}</option>
@@ -43,7 +57,7 @@ const Filters = ({
                   </select>
                 </div>
                 <div className="filter-section">
-                  <select id="priceRange" className={filterClass} onChange={onFilterChange}>
+                  <select id="priceRange" className={filterClass} onChange={handleSingleChange}>
                     <option value="">Price Ranges</option>
                     {priceRanges.map((range) => (
                       <option key={range} value={range}>{range}</option>
@@ -68,14 +82,14 @@ const Filters = ({
                 <i className="fa fa-times"></i>
               </button>
               <div className="filter-section">
-                <select id="cardtype" className={filterClass} onChange={onFilterChange}>
+                <select id="cardtype" className={filterClass} value={currentFilters.cardtype || ""} onChange={handleSingleChange}>
                   <option value="">Card Type</option>
                   <option value="Pokémon">Pokémon</option>
                   <option value="Trainer">Trainer</option>
                 </select>
               </div>
               <div className="filter-section">
-                <select id="subtypes" className={filterClass} onChange={onFilterChange}>
+                <select id="subtypes" className={filterClass} onChange={handleMultiChange}>
                   <option value="">Subtypes</option>
                   {subtypes.map((subtype) => (
                     <option key={subtype} value={subtype}>{subtype}</option>
@@ -83,7 +97,7 @@ const Filters = ({
                 </select>
               </div>
               <div className="filter-section">
-                <select id="energytypes" className={filterClass} onChange={onFilterChange}>
+                <select id="energytypes" className={filterClass} onChange={handleMultiChange}>
                   <option value="">Energy types</option>
                   {energyTypes.map((energy) => (
                     <option key={energy} value={energy}>{energy}</option>
@@ -91,7 +105,7 @@ const Filters = ({
                 </select>
               </div>
               <div className="filter-section">
-                <select id="rarity" className={filterClass} onChange={onFilterChange}>
+                <select id="rarity" className={filterClass} onChange={handleMultiChange}>
                   <option value="">Rarity</option>
                   {rarities.map((rarity) => (
                     <option key={rarity} value={rarity}>{rarity}</option>

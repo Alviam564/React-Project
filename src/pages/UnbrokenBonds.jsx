@@ -3,8 +3,8 @@ import BackGround from "../components/BackGround"
 import Footer from "../components/Footer"
 import {C, R, UBL, CR, TUL, CRWC } from "../utils/images"
 import Display from "../components/Display"
-import SearchbarSolo from "../components/SearchbarSolo"
 import SearchbarAll from "../components/SearchbarAll"
+import SearchbarSolo from "../components/SearchbarSolo"
 import Filters from "../components/Filters"
 import React, { useEffect, useState, useCallback } from "react"
 import Loader from "../components/Loader"
@@ -19,24 +19,47 @@ const UnbrokenBonds = () => {
     const [isBackgroundLoaded, setIsBackgroundLoaded] = useState(false);
     const [minDelayPassed, setMinDelayPassed] = useState(false);
     const isLoading = !(isBackgroundLoaded && minDelayPassed);
+    const [searchTerm, setSearchTerm] = useState('');
+    const handleSearchChange = (newTerm) => {setSearchTerm(newTerm);};
     const onLoaded = useCallback(() => {
       setIsBackgroundLoaded(true);
     }, []);
 
-    const [filters, setFilters] = useState({
+    const defaultFilters = {
         cardtype: '',
-        subtypes: '',
-        energytypes: '',
-        rarity: '',
+        subtypes: [],
+        energytypes: [],
+        rarity: [],
         priceType: '',
         priceRange: '',
-      });
-      
-      const handleFilterChange = (e) => {
-        const { id, value } = e.target;
-        setFilters(prev => ({ ...prev, [id]: value }));
-      };
+    };
     
+    const [filters, setFilters] = useState(defaultFilters);
+    
+    const handleFilterChange = (newFilter) => {
+      if (Object.entries(newFilter).some(([key, val]) => {
+        if (["cardtype", "priceType", "priceRange"].includes(key)) {
+          return val === "";
+        }
+        return false;
+      })) {
+        setFilters(defaultFilters);
+      } else {
+        const normalized = { ...newFilter };
+        ["subtypes", "energytypes", "rarity"].forEach(key => {
+          if (Array.isArray(normalized[key])) {
+            normalized[key] = normalized[key].filter(v => v !== "");
+          } else if (normalized[key] === "") {
+            normalized[key] = [];
+          }
+        });
+    
+        setFilters(prev => ({
+          ...prev,
+          ...normalized,
+        }));
+      }
+    };
 
 
     useEffect(() =>  {
@@ -98,17 +121,22 @@ const UnbrokenBonds = () => {
                         filterClass="selectUB"
                         containerClass="filters-containerUB"
                         onFilterChange={handleFilterChange}
+                        currentFilters={filters}
                         subtypes={subtypes}
                         rarities={rarities}
                         energyTypes={energyTypes}
                         priceTypes={priceTypes}
                         priceRanges={priceRanges}
                     />
-                    <Display cardClassName={"card-UB"}
+                    <Display 
+                        cardClassName={"card-UB"}
+                        setName="UnbrokenBonds"
                         setQueries={["set.id:sm10"]}
                         filters={filters}
-                        SearchbarAll={(props) => <SearchbarAll {...props} className="selectUBs"/>}
-                        SearchbarSolo={() => <SearchbarSolo className="selectUBs"  setId="sm10"/>}
+                        searchTerm={searchTerm}
+                        onSearchChange={handleSearchChange}  
+                        SearchbarAll={SearchbarAll}
+                        SearchbarSolo={SearchbarSolo}
                     />
                 </section>
             </main>
